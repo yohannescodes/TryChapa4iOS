@@ -1,0 +1,15 @@
+{
+  "originHash" : "4a541f43dcfe6b897767d70da8e2e3e34691fbb9e0d8daaeb947738ec93cc8d3",
+  "pins" : [
+    {
+      "identity" : "chapa4ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yohannescodes/Chapa4iOS",
+      "state" : {
+        "revision" : "429c782a3df136b6e7abbe02cdcae68ecc800c66",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

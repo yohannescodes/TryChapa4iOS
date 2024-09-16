@@ -13,6 +13,7 @@
 		540F92AE2C9848A300876F43 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 540F92AD2C9848A300876F43 /* Base */; };
 		540F92B02C9848A400876F43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540F92AF2C9848A400876F43 /* Assets.xcassets */; };
 		540F92B32C9848A400876F43 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 540F92B22C9848A400876F43 /* Base */; };
+		540F92BC2C98492200876F43 /* Chapa4iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 540F92BB2C98492200876F43 /* Chapa4iOS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540F92BC2C98492200876F43 /* Chapa4iOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = TryChapa4iOS;
+			packageProductDependencies = (
+				540F92BB2C98492200876F43 /* Chapa4iOS */,
+			);
 			productName = TryChapa4iOS;
 			productReference = 540F92A32C9848A300876F43 /* TryChapa4iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 540F929A2C9848A300876F43;
+			packageReferences = (
+				540F92BA2C98492100876F43 /* XCRemoteSwiftPackageReference "Chapa4iOS" */,
+			);
 			productRefGroup = 540F92A42C9848A300876F43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -363,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		540F92BA2C98492100876F43 /* XCRemoteSwiftPackageReference "Chapa4iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yohannescodes/Chapa4iOS";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		540F92BB2C98492200876F43 /* Chapa4iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 540F92BA2C98492100876F43 /* XCRemoteSwiftPackageReference "Chapa4iOS" */;
+			productName = Chapa4iOS;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 540F929B2C9848A300876F43 /* Project object */;
 }
