@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        chapa = Chapa(secretKey: "PUT YOUR SECRET KEY HERE")
+        chapa = Chapa(secretKey: "CHASECK_TEST-PTyBRkcerHTkqAboQWqvCNisdxHvgzfR")
         view.addSubview(payBtn)
         
         payBtn.addTarget(self, action: #selector(didTapPayBtn), for: .touchUpInside)
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     
     @objc func didTapPayBtn(){
         transaction = chapa.generateTransactionReference()
-        let customer = Customer(amount: "100", currency: .etb, email: nil, firstName: "Steve", lastName: "Jobs", phoneNumber: "0900123456", txRef: transaction, callbackURL: nil, returnURL: nil, customization: ChapaCustomization(title: "Hello", description: "Welcome to Chapa4iOS POC!"))
+        let customer = Customer(amount: "100", currency: .etb, email: nil, firstName: "Steve", lastName: "Jobs", phoneNumber: "0900123456", txRef: transaction, callbackURL: nil, returnURL: nil, customization: ChapaCustomization(title: "Hello", description: "Welcome to Chapa4iOS POC"))
         
         chapa.acceptPayment(controller: self, customer: customer)
     }
