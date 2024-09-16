@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        chapa = Chapa(secretKey: "CHASECK_TEST-PTyBRkcerHTkqAboQWqvCNisdxHvgzfR")
+        chapa = Chapa(secretKey: "PUT YOUR SECRET KEY HERE")
         view.addSubview(payBtn)
         
         payBtn.addTarget(self, action: #selector(didTapPayBtn), for: .touchUpInside)
